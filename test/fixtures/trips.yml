@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  orgin: MyString
+  destination: MyString
+  leave_time: 2017-02-19 15:16:27
+  passengers: 1
+  trip_id: 
+
+two:
+  orgin: MyString
+  destination: MyString
+  leave_time: 2017-02-19 15:16:27
+  passengers: 1
+  trip_id: 

@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Card name:</strong>
+  <%= @payment.card_name %>
+</p>
+
+<p>
+  <strong>Card fname:</strong>
+  <%= @payment.card_fname %>
+</p>
+
+<p>
+  <strong>Card middleinit:</strong>
+  <%= @payment.card_middleInit %>
+</p>
+
+<p>
+  <strong>Card lname:</strong>
+  <%= @payment.card_lname %>
+</p>
+
+<p>
+  <strong>Exp date:</strong>
+  <%= @payment.exp_date %>
+</p>
+
+<p>
+  <strong>Card number:</strong>
+  <%= @payment.card_number %>
+</p>
+
+<p>
+  <strong>Security code:</strong>
+  <%= @payment.security_code %>
+</p>
+
+<p>
+  <strong>Payment:</strong>
+  <%= @payment.payment_id %>
+</p>
+
+<%= link_to 'Edit', edit_payment_path(@payment) %> |
+<%= link_to 'Back', payments_path %>

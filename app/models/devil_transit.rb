@@ -1,0 +1,2 @@
+class DevilTransit < ApplicationRecord
+end
