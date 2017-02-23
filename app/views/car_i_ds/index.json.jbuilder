@@ -1,1 +1,0 @@
-json.array! @car_ids, partial: 'car_ids/car_id', as: :car_id
