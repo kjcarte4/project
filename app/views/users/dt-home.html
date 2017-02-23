@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta charset="UTF-8">
+    <meta nzame="viewport" content="width = device-width, initial-scale = 1">
+    <title>DT-Home</title>
+    <!--Bootstrap links-->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/'>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <!--DevilTransit css link-->
+</head>
+<body>
+<div class="container">
+    <div class="col-lg-3 col-med-3 col-sm-6 col-xs-12">
+        <div class="input-group input-group-lg">
+            <span class="input-group-addon">Username</span>
+            <input type="text" class="form-control" placeholder="Username">
+        </div></br>
+        <div class="input-group input-group-lg">
+            <span class="input-group-addon">Password</span>
+            <input type="text" class="form-control" placeholder="Password">
+        </div></br>
+        <button class="btn btn-default">Enter</button>
+    </div>
+    <a href="http://localhost:3000/users/new"></a> <button class="btn btn-default">Sign Up</button></a>
+</div>
+<!--Javascript links-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<%= yield %>
+</body>
+</html>

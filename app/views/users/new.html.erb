@@ -1,15 +1,33 @@
 <h1>New User</h1>
+<head>
+  <%= csrf_meta_tags %>
 
-<div class="container">
-  <div class="jumbotron">
-    <div class="col-lg-3">
-      <div class="input-group input-group-lg">
-        <span class="input-group-addon">Username</span>
-        <input type="text" class="form-control" placeholder="Username">
-        <%= render 'form', user: @user %>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <meta charset="UTF-8">
+  <meta nzame="viewport" content="width = device-width, initial-scale = 1">
+  <title>dt-signup</title>
+  <!--Bootstrap links-->
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/'>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <!--DevilTransit css link-->
+</head>
+<body>
+  <div class="contianer">
+    <div class="row">
+      <div class="col-lg-3 col-med-3 col-sm-6 col-xs-12">
+        <div class="input-group input-group-lg">
+            <div class="span12 pagination-centered">
+              <%= render 'form', user: @user %>
+            </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
-
+</body>
+<!--Javascript links-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <%= link_to 'Back', users_path %>
